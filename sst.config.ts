@@ -9,6 +9,11 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("MyWeb");
+    new sst.aws.Nextjs("Web", {
+      domain:
+        $app.stage === "production"
+          ? { domainName: "sheakelly.au", redirects: ["www.sheakelly.au"] }
+          : undefined,
+    });
   },
 });
