@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <main>
       <Container size="1">
-        <Heading size={{ initial: "7", sm: "5" }}>sheakelly.au</Heading>
+        <Heading size={{ initial: "7", sm: "5" }}>sheakelly.au :)</Heading>
       </Container>
     </main>
   )
