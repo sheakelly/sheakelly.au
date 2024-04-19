@@ -1,7 +1,11 @@
+import { Container, Heading } from "@radix-ui/themes"
+
 const Home = () => {
   return (
     <main>
-      <h1>sheakelly.au</h1>
+      <Container size="1">
+        <Heading>sheakelly.au</Heading>
+      </Container>
     </main>
   )
 }
